@@ -21,10 +21,7 @@ import {
   editPot,
   updatePotAmount,
 } from "../../store/data.ts";
-import {
-  MoneyManageDialog,
-  FormData,
-} from "../MoneyManageDialog/MoneyManageDialog.tsx";
+import { MoneyManageDialog } from "../MoneyManageDialog/MoneyManageDialog.tsx";
 
 interface DetailsItemComponentProps {
   name: string;
