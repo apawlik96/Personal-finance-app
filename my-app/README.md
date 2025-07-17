@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Personal Finance App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About
 
-## Available Scripts
+Personal Finance App is a responsive web application designed to help users take control of their personal finances. It offers a clean and intuitive interface to track daily expenses, set savings goals, monitor recurring bills, and review past transactions.
 
-In the project directory, you can run:
+## Features
 
-### `yarn start`
+### Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Main dashboard with a summary of Current Balance, Income and Expenses.
+- Section previews (Pots, Recurring Bills, Budgets, Transactions) with buttons linking to full views.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Transactions
 
-### `yarn test`
+- Table view of all transactions.
+- Sorting by: category, A–Z / Z–A, date (newest/oldest), amount (highest/lowest).
+- Search input for filtering transactions.
+- Select number of rows displayed per page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Budgets/Pots
 
-### `yarn build`
+- Detailed view of each budget or savings pot
+- Options to add, edit or delete pots and budgets
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Recurring Bills
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Summary view: Paid Bills, Total Upcoming, Due Soon.
+- Table with columns: Bill Title, Due Date, Amount.
+- Sorting by: category, A–Z / Z–A, date (newest/oldest), amount (highest/lowest).
+- Search input for filtering transactions.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## News Ticker
 
-### `yarn eject`
+### API
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Live news ticker displaying financial headlines with publication date.
+- Fetched from the Finnhub API in real time.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## State Management & Routing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Redux Toolkit
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Used for global state management (e.g. transactions, budgets, UI state).
 
-## Learn More
+### React Router
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Enables client-side navigation between app sections (dashboard, transactions, budgets, etc.)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technology Stack
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Language: TypeScript
+- Frontend: React.js
+- State Management: Redux Toolkit
+- Routing: React Router
+- Styling: Styled-components & Material-UI (MUI)
+- Testing: Jest & React Testing Library
+- API: Finnhub
+- Deployment: Netlify
